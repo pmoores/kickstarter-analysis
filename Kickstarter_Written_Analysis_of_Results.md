@@ -10,6 +10,7 @@ The purpose of this project is to demonstrate how different campaigns fared in r
 
 ### Analysis of Outcomes Based on Launch Date
 I first created a new column within the Kickstarter_Challenge.xlsx workbook to display the Year each Kickstarter campaign was created. Used YEAR() function to pull the year each Kickstarter was created from the 'Date Created Conversion' column. Next, I created a pivot table to display 'Theatre Outcomes by Launch Date". This table displays the month a Kickstarter campaign began and whether or not the campaign was successful, failed or was canceled. A filter was applied to "Parent Category" to display only data for 'theatre'.
+
 [Pivot Table - Theater Outcomes by Launch Date](https://github.com/pmoores/kickstarter-analysis/blob/main/Resources/Pivot_Table_Outcomes_by_Launch_Date.png)
 
 Finally, a line chart was created to display Theatre Outcomes by Launch Date. This table allows us to understand what months of the year had the most successful campaigns, what months had the most failed campaigns and and what months had the most canceled campaigns.
