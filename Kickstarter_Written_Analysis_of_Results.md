@@ -9,12 +9,18 @@ The purpose of this project is to demonstrate how different campaigns fared in r
 ## Analysis and Challenges
 
 ### Analysis of Outcomes Based on Launch Date
-I first created a new column within the Kickstarter_Challenge.xlsx workbook to display the Year each Kickstarter campaign was created. Used YEAR() function to pull the year each Kickstarter was created from the 'Date Created Conversion' column. Next, I created a pivot table to display 'Theatre Outcomes by Launch Date". This table displays the month a Kickstarter campaign began and whether or not the campaign was successful, failed or was canceled. A filter was applied to "Parent Category" to display only data for 'theatre'. [Insert Pivot_Table_Outcomes_by_Launch_Date image) Finally, a line chart was created to display Theatre Outcomes by Launch Date. This table allows us to understand what months of the year had the most successful campaigns, what months had the most failed campaigns and and what months had the most canceled campaigns.
+I first created a new column within the Kickstarter_Challenge.xlsx workbook to display the Year each Kickstarter campaign was created. Used YEAR() function to pull the year each Kickstarter was created from the 'Date Created Conversion' column. Next, I created a pivot table to display 'Theatre Outcomes by Launch Date". This table displays the month a Kickstarter campaign began and whether or not the campaign was successful, failed or was canceled. A filter was applied to "Parent Category" to display only data for 'theatre'.
+[Pivot Table - Theater Outcomes by Launch Date](https://github.com/pmoores/kickstarter-analysis/blob/main/Resources/Pivot_Table_Outcomes_by_Launch_Date.png)
+
+Finally, a line chart was created to display Theatre Outcomes by Launch Date. This table allows us to understand what months of the year had the most successful campaigns, what months had the most failed campaigns and and what months had the most canceled campaigns.
 
 
 ### Analysis of Outcomes Based on Goals
-First, I created a table in a new sheet titled "Outcomes Based on Goals". Ranges of dollar amounts were created to perform an analysis of the number and percentage of campaigns that were successful, failed, or were canceled. Next, the COUNTIFS() function was used to populate each goal range within the table. For example, the formula used to display the number of successful plays campaigns with a goal range of $10000 to $14999 is =COUNTIFS(Kickstarter!F:F, "successful",Kickstarter!D:D,">=10000",Kickstarter!D:D,"<=14999", Kickstarter!R:R, "plays"). This formula only counts 'successful' campaigns in column F of the Kickstarter sheet, within a range of $10000 to $14999 in column D, and only those labelled as 'plays' in column R. The SUM() function was then used to display the "Total Projects" under each goal range.
-- A basic equation was used to find the percentage of 'plays' campaigns that were successful, failed or were canceled. For example, to find the percentage of successful plays with a goal of less than $1000, the number successful was divided by the total projects in that goal range. The new cells were then formatted to display percentages. [Insert Pivot_Table_Outcomes_Based_on_Goals image) Finally, a pivot line chart was created to display the percentage of plays that were successful, failed or canceled based on the campaigns goal range.
+First, I created a table in a new sheet titled "Outcomes Based on Goals". Ranges of dollar amounts were created to perform an analysis of the number and percentage of campaigns that were successful, failed, or were canceled. Next, the COUNTIFS() function was used to populate each goal range within the table. For example, the formula used to display the number of successful plays campaigns with a goal range of $10000 to $14999 is =COUNTIFS(Kickstarter!F:F, "successful",Kickstarter!D:D,">=10000",Kickstarter!D:D,"<=14999", Kickstarter!R:R, "plays"). This formula only counts 'successful' campaigns in column F of the Kickstarter sheet, within a range of $10000 to $14999 in column D, and only those labelled as 'plays' in column R. The SUM() function was then used to display the "Total Projects" under each goal range. A basic equation was used to find the percentage of 'plays' campaigns that were successful, failed or were canceled. For example, to find the percentage of successful plays with a goal of less than $1000, the number successful was divided by the total projects in that goal range. The new cells were then formatted to display percentages.
+
+[Pivot Table - Outcomes Based on Goals](https://github.com/pmoores/kickstarter-analysis/blob/main/Resources/Pivot_Table_Outcomes_Based_on_Goals.png)
+
+Finally, a pivot line chart was created to display the percentage of plays that were successful, failed or canceled based on the campaigns goal range.
 
 
 ### Challenges and Difficulties Encountered
@@ -25,7 +31,7 @@ First, I created a table in a new sheet titled "Outcomes Based on Goals". Ranges
 
 - What are two conclusions you can draw about the Outcomes based on Launch Date?
 
-[Insert Outcomes Based on Launch Date line chart image]
+[Line Chart - Theater Outcomes vs. Launch Date](https://github.com/pmoores/kickstarter-analysis/blob/main/Resources/Theater_Outcomes_vs_Launch.png)
 
 Theatre campaigns launched in May have the most success. April, June and July also had higher numbers of successful theatre campaigns. Failed campaigns were highest from May to August and then October. Cancelled campaigns were relatively constant across the year.
 
@@ -36,7 +42,7 @@ Conclusion 2: May is the best month to launch a campaign as the frequency of suc
 
 - What can you conclude about the Outcomes based on Goals?
 
-[Insert Outcomes Based on Goals line chart image]
+[Line Chart - Theater Outcomes Based on Goals](https://github.com/pmoores/kickstarter-analysis/blob/main/Resources/Outcomes_vs_Goals.png)
 
 Conclusion 1: The best goal ranges to launch a 'plays' Kickstarter campaign are: $1 to $4999 (72.66% successful), $35000 to $39999 (66.67% successful) and $40000 to $44999 (66.67% successful). Campaigns within these goal ranges have the highest percentage of success.
 
